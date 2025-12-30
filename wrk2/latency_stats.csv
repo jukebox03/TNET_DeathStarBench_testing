@@ -1,0 +1,3 @@
+Target_RPS,Actual_RPS,Mean_Latency,Stdev_Latency,Max_Latency,P50_Latency,P75_Latency,P90_Latency,P99_Latency,P99.9_Latency,Total_Requests,Socket_Errors,Non_2xx,Timeout_Errors,Error_Rate(%),Transfer_Rate
+200,198.18,77.24ms,117.00ms,462.59ms,5.27ms,127.55ms,256.26ms,462.59ms,634.88ms,11896,44,0,44,0.3699,66.72KB
+400,397.04,151.81ms,206.76ms,894.97ms,46.65ms,241.66ms,428.03ms,894.97ms,1.32s,23833,0,0,0,0.0,134.78KB

@@ -26,16 +26,13 @@ spec:
         io.kompose.service: rate
     spec:
       containers:
-        - command:
-            - ./rate
-          image: deathstarbench/hotel-reservation:latest
+        - command: ["rate"]
+          image: hotel-reservation:local
+          imagePullPolicy: Never
           name: hotel-reserv-rate
           ports:
             - containerPort: 8084
           resources:
             requests:
-              cpu: 100m
-            limits:
-              cpu: 1000m
       restartPolicy: Always
 status: {}

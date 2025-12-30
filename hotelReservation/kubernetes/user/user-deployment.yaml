@@ -26,16 +26,13 @@ spec:
         io.kompose.service: user
     spec:
       containers:
-        - command:
-            - ./user
-          image: deathstarbench/hotel-reservation:latest
+        - command: ["user"]
+          image: hotel-reservation:local
+          imagePullPolicy: Never
           name: hotel-reserv-user
           ports:
             - containerPort: 8086
           resources:
             requests:
-              cpu: 100m
-            limits:
-              cpu: 1000m
       restartPolicy: Always
 status: {}

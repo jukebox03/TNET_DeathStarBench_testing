@@ -1,0 +1,17 @@
+{
+    "experiment_name": "no_istio",
+    "timestamp": "20251230_150959",
+    "rates": [200,400,600,800,1000],
+    "duration": "60s",
+    "warmup_time": 15,
+    "cooldown_time": 15,
+    "measure_duration": 30,
+    "repetitions": 3,
+    "target": "http://192.168.49.2:30918",
+    "istio_enabled": false,
+    "all_namespaces": true,
+    "node_info": "v1.34.0",
+    "default_pod_count": 19,
+    "istio_system_pod_count": 0,
+    "kube_system_pod_count": 8
+}
