@@ -1,7 +1,7 @@
 {
     "experiment_name": "no_istio",
-    "timestamp": "20251230_150959",
-    "rates": [200,400,600,800,1000],
+    "timestamp": "20251230_154433",
+    "rates": [200,400,600,700,800,1000],
     "duration": "60s",
     "warmup_time": 15,
     "cooldown_time": 15,

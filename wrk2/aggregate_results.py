@@ -31,6 +31,16 @@ def aggregate_csv(metrics_file="k8s_full_metrics.csv", latency_file="latency_sta
     if os.path.exists(latency_file):
         try:
             df_lat = pd.read_csv(latency_file)
+
+            cols_to_fix = ['P50_Latency', 'P99_Latency', 'Actual_RPS'] # 에러 나는 컬럼들
+            for col in cols_to_fix:
+                if col in df_lat.columns:
+                    # 1. 혹시 단위(ms)가 있다면 제거 (간단 버전)
+                    if df_lat[col].dtype == 'object':
+                        df_lat[col] = df_lat[col].astype(str).str.replace('ms', '', regex=False).str.replace('us', '', regex=False)
+                    
+                    # 2. 숫자로 변환 (변환 안 되는 'N/A' 등은 NaN으로 처리)
+                    df_lat[col] = pd.to_numeric(df_lat[col], errors='coerce')
             
             # 주요 컬럼 집계
             cols = ['Actual_RPS', 'Error_Rate(%)', 'P50_Latency', 'P99_Latency']
