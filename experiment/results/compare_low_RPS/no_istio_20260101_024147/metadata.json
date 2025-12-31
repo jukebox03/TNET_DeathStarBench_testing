@@ -1,0 +1,39 @@
+{
+    "experiment": "no_istio",
+    "timestamp": "20260101_024147",
+    "rates": [100,200,300,400,500,600],
+    "duration": "90s",
+    "warmup_time": 60,
+    "measure_duration": 60,
+    "repetitions": 1,
+    "target": "http://192.168.49.2:30918",
+    "istio_enabled": false,
+    "istio_optimizations": {
+        "applied": false,
+        "proxy_cpu_limit": "unlimited",
+        "proxy_memory_limit": "unlimited",
+        "concurrency": 0,
+        "connection_pool_max": 10000,
+        "timeout": "disabled",
+        "retries": "disabled",
+        "mtls_mode": "PERMISSIVE"
+    },
+    "warmup": {
+        "enabled": true,
+        "rps": 500,
+        "duration": "30s",
+        "wait_after": 10
+    },
+    "cache_flush": {
+        "enabled": true
+    },
+    "cooldown": {
+        "type": "adaptive",
+        "min": 10,
+        "max": 120,
+        "cpu_threshold_percent": 120,
+        "baseline_cpu_millicores": 100
+    },
+    "pcm_available": true,
+    "prometheus_available": true
+}

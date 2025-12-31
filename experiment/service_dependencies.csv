@@ -1,0 +1,8 @@
+Timestamp,Parent,Child,CallCount
+2026-01-01 03:00:02,frontend,profile,1770
+2026-01-01 03:00:02,search,rate,1046
+2026-01-01 03:00:02,frontend,reservation,1051
+2026-01-01 03:00:02,frontend,search,1046
+2026-01-01 03:00:02,search,geo,1046
+2026-01-01 03:00:02,frontend,recommendation,724
+2026-01-01 03:00:02,frontend,user,11
