@@ -5,7 +5,7 @@ ports:
     targetPort: 8082
  
 container:
-  command: ./search
+  command: /go/bin/search
   image: deathstarbench/hotel-reservation
   name: hotel-reserv-search
   ports:

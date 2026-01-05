@@ -27,15 +27,10 @@ spec:
     spec:
       containers:
         - command:
-            - ./search
+            - search
           image: deathstarbench/hotel-reservation:latest
           name: hotel-reserv-search
           ports:
             - containerPort: 8082
-          resources:
-            requests:
-              cpu: 100m
-            limits:
-              cpu: 1000m
       restartPolicy: Always
 status: {}

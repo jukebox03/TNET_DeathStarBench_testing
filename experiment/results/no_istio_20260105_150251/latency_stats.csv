@@ -1,0 +1,6 @@
+Target_RPS,Actual_RPS,Mean_Latency,Stdev_Latency,Max_Latency,P50_Latency,P75_Latency,P90_Latency,P99_Latency,P99.9_Latency,Total_Requests,Socket_Errors,Non_2xx,Timeout_Errors,Error_Rate(%),Transfer_Rate
+500,498.15,10.89ms,17.33ms,47.04ms,4.15ms,17.49ms,27.15ms,47.04ms,240.90ms,59790,1,0,1,0.0017,435.98KB
+1000,998.8,13.60ms,17.75ms,66.37ms,4.43ms,21.82ms,37.28ms,66.37ms,157.05ms,119872,0,0,0,0.0,460.60KB
+2000,2001.83,44.72ms,51.26ms,230.01ms,27.68ms,65.98ms,110.21ms,230.01ms,357.89ms,240219,0,0,0,0.0,717.39KB
+3000,2431.09,12.44s,6.42s,25.71s,12.31s,17.56s,21.23s,25.71s,29.05s,291744,0,0,0,0.0,825.89KB
+4000,2414.29,25.70s,12.80s,48.92s,25.56s,36.60s,43.35s,48.92s,N/A,289714,0,0,0,0.0,816.33KB

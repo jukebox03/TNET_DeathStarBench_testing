@@ -6,7 +6,7 @@ global:
   imagePullPolicy: "IfNotPresent"
   restartPolicy: Always
   serviceType: ClusterIP
-  dockerRegistry: docker.io
+  dockerRegistry: "docker.io"
   defaultImageVersion: latest
   serviceDnsDomain: "cluster.local"
   services:
